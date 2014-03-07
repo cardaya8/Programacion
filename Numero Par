@@ -1,0 +1,31 @@
+Programacion
+============
+/*-----------------------------------------------------------------
+ Programa: Comparar.cpp
+ Version: V1
+ Fecha: 07/03/2014
+ Autor: Carlos Daniel Ardaya
+ Comentario: Comparacion si un numero es par
+----------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+void main()
+{
+int A;
+printf ("\n\n Ingrese un numero: ");
+scanf ("%d",&A);
+if (A % 2 == 0 )
+   {printf("\n\n %d es Par ",A);
+   }
+else 
+   {printf("\n\n %d No es Par ",A);
+   }
+printf("\n\n");
+system("pause");
+
+}
