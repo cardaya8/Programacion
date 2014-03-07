@@ -1,0 +1,29 @@
+/*-----------------------------------------------------------------
+ Programa: Comparar.cpp
+ Version: V1
+ Fecha: 07/03/2014
+ Autor: Carlos Daniel Ardaya
+ Comentario: Comparacion si un numero es Multiplo de 3 y 5
+----------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+void main()
+{
+int A;
+printf ("\n\n Ingrese un numero: ");
+scanf ("%d",&A);
+if ((A % 3 == 0 )&& (A % 5 == 0 ))
+   {printf("\n\n %d es Multiplo de 3 y 5 ",A);
+   }
+else 
+   {printf("\n\n %d No es Multiplo de 3 y 5 ",A);
+   }
+printf("\n\n");
+system("pause");
+
+}
