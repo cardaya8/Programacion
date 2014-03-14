@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------
+ Programa: Comparar.cpp
+ Version: V1
+ Fecha: 14/03/2014
+ Autor: Carlos Daniel Ardaya
+ Comentario: Ordenar de mayor a menor
+----------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+void main()
+{
+	int A,B,C;
+	printf ("\n\n Ingrese tres numeros: ");
+	scanf ("%d%d%d",&A,&B,&C);
+if (A > B)
+  {if (B > C)
+	printf ("\n\n %d %d %d",A,B,C);
+   else 
+     {if (A > C)
+	    printf ("\n\n %d %d %d",A,C,B);
+      else 
+	   printf ("\n\n %d %d %d",C,A,B);
+   
+    }
+  }
+else
+  {if (B>C)
+    {if (C>A)printf ("\n\n %d %d %d",B,C,A);
+     else printf ("\n\n %d %d %d",B,A,C);
+    }
+  else printf ("\n\n %d %d %d",C,B,A);
+  }
+printf("\n\n");
+system("pause");
+}
