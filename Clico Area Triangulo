@@ -3,7 +3,7 @@ Programa : Clico Area Triangulo
 Version: V1
 Fecha : 28 / 03 / 14
 Autor : Carlos Daniel Ardaya
-Comentarios: Ingrese un numero hasta que sea PAR y muestre su doble
+Comentarios: Calcular el area de un triangulo con numeros positivos
 */
 
 #include "stdafx.h"
