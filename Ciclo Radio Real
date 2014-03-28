@@ -3,7 +3,7 @@ Programa : Clico Radio Real
 Version: V1
 Fecha : 28 / 03 / 14
 Autor : Carlos Daniel Ardaya
-Comentarios: Ingrese un numero hasta que sea PAR y muestre su doble
+Comentarios: Calcular el Area de un Circulo con valores positivos
 */
 
 #include "stdafx.h"
