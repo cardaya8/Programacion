@@ -1,0 +1,29 @@
+/* 
+Programa : Clico Par
+Version: V1
+Fecha : 28 / 03 / 14
+Autor : Carlos Daniel Ardaya
+Comentarios: Ingrese un numero hasta que sea PAR y muestre su doble
+*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+void main ()
+{
+	int N, Resultado;
+	printf ("\n\n Ingrese Numero Par:  ");
+	scanf ("%d",&N);
+while ( N % 2 == 1)
+{
+	printf ("\n\n ERROR Ingrese Numero Par:  ");
+	scanf ("%d",&N);
+}
+Resultado = N * 2;
+printf("\n\n El doble es %d \n\n ",Resultado);
+
+system ("pause");
+}
