@@ -1,0 +1,29 @@
+/* 
+Programa : Clico Radio Real
+Version: V1
+Fecha : 28 / 03 / 14
+Autor : Carlos Daniel Ardaya
+Comentarios: Ingrese un numero hasta que sea PAR y muestre su doble
+*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+#define PI 3.1416
+
+void main ()
+{
+	float Radio, Area;
+	printf ("\n\n Ingrese el Radio:  ");
+	scanf ("%f",&Radio);
+while (Radio <= 0)
+{
+	printf ("\n\n ERROR Ingrese el Radio:  ");
+	scanf ("%f",&Radio);
+}
+Area = PI * Radio * Radio;
+printf("\n\n El doble es %f \n\n ",Area);
+
+system ("pause");
+}
