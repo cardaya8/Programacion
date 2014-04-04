@@ -1,0 +1,43 @@
+/*-----------------------------------------------------------
+Programa : Primeros.cpp
+Fecha : 4 de Abril del 2014
+Version : v1
+Autor : Carlos Daniel Ardaya Montaño
+Observaciones : Muestra la suma de los primeros numeros naturales
+--------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+void main ()
+{
+   int N,C,S;
+ 
+   printf ("\Ingrese Cantidad de Naturales a Sumar: ");
+   scanf ("%d",&N);
+ while (N <= 0)
+  {
+	  printf ("\Ingrese Cantidad de Naturales a Sumar: ");
+	  scanf (" %d",&N);
+  }
+ S=0;
+ C=1;
+ printf ("%d ",C);
+ while (C <= N)
+  {
+    
+	S=S+C;
+	C=C+1;
+ if(C>1)
+	{
+	 printf (" + %d ",C);
+	}
+
+ 
+  }
+ printf ("= %d\n\n",S);
+
+ system ("pause");
+}
