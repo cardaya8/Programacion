@@ -5,7 +5,7 @@
 #define PI 3.1416
 void main ()
 {
-	int Operaciones, Base, Altura, AreaR, BaseR, AlturaR ;
+	int Operaciones, Base, Altura, AreaR, BaseR, AlturaR, Lado, AreaC, LadoP, AreaP;
 	float Radio , Area, B1, AreaT;
 
 	printf("Ingrese\n\n 1.- Para Calcular el Area de un Circulo \n\n 2.- Para Calcular el Area de un Triangulo \n\n 3.- Para Calcular el Area de un Rectangulo \n\n 4.- Para Calcular el Area de un Cuadrado \n\n 5.- Para Calcular el Perimetro Cuadrado\n\n");
@@ -22,7 +22,7 @@ void main ()
 	scanf ("%f",&Radio);
 	while (Radio <= 0)
 	{
-	printf ("\n\n ERROR Ingrese el Radio:  ");
+	printf ("\n\n ERROR Ingrese el Radio (+):  ");
 	scanf ("%f",&Radio);
 	}
 	Area =  PI * Radio * Radio;
@@ -37,9 +37,9 @@ void main ()
 			scanf ("%d",&Altura);
 		while ((Base <= 0) | (Altura <= 0))
 		{
-			printf ("\n\n ERROR Ingrese Base:  ");
+			printf ("\n\n ERROR Ingrese Base (+):  ");
 			scanf ("%d",&Base);
-			printf ("\n\n ERROR Ingrese Altura:  ");
+			printf ("\n\n ERROR Ingrese Altura (+):  ");
 			scanf ("%d",&Altura);
 		}
 			B1=Base;
@@ -55,14 +55,40 @@ void main ()
 		scanf ("%d",&AlturaR);
 	while ((BaseR <= 0) | (AlturaR <= 0))
 	{
-		printf ("\n\n ERROR Ingrese Base:  ");
+		printf ("\n\n ERROR Ingrese Base (+):  ");
 		scanf ("%d",&BaseR);
-		printf ("\n\n ERROR Ingrese Altura:  ");
+		printf ("\n\n ERROR Ingrese Altura (+):  ");
 		scanf ("%d",&AlturaR);
 	}
 
 		AreaR = BaseR * AlturaR ;
 		printf("\n\n El Area es %d \n\n ",AreaR);
 	}
+	else 
+		if (Operaciones == 4)
+		{
+			printf ("\n\n Ingrese el Lado:  ");
+			scanf ("%d",&Lado);
+		while (Lado <= 0)
+		 {
+			printf ("\n\n Error el Lado (+):  ");
+			scanf ("%d",&Lado);
+		 }
+			AreaC = Lado * Lado ;
+			printf("\n\n El Area es %d \n\n ",AreaC);
+		}
+	if (Operaciones == 5)
+		{
+			printf ("\n\n Ingrese el Lado:  ");
+			scanf ("%d",&LadoP);
+		while (LadoP <= 0)
+		 {
+			printf ("\n\n Error el Lado (+):  ");
+			scanf ("%d",&LadoP);
+		 }
+			AreaP = 4 * LadoP ;
+			printf("\n\n El Area es %d \n\n ",AreaP);
+		}
+
 	system ("pause");
 }
