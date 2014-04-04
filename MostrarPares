@@ -1,0 +1,37 @@
+/*-----------------------------------------------------------
+Programa : SumaPares.cpp
+Fecha : 4 de Abril del 2014
+Version : v1
+Autor : Carlos Daniel Ardaya Montaño
+Observaciones : Muestra la suma de los numeros pares entre 2 numeros
+--------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+void main ()
+{
+   int A,B,P,Mayor,Menor;
+ 
+   printf("\n\nIngrese 2 numeros enteros : ");
+   scanf ("%d%d",&A,&B);
+   if(A > B)
+   {
+	   Mayor=A; Menor=B;
+   }
+   else 
+   {
+	   Mayor=B; Menor=A;
+   }
+ if (Menor % 2 == 0) P=Menor;
+ else  P=Menor+1;
+ while (P <= Mayor)
+ {
+	 printf (" %d ",P);
+	 P= P + 2;
+ }
+ printf("\n\n");
+ system ("pause");
+}
