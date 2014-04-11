@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+void main ()
+{
+	int N,  S, c;
+do
+{
+	printf("Ingrese un numero : ");
+	scanf ("%d",&N);
+}while (N<=0);
+S=0;
+c=1;
+while (c<=N)
+{if(c%2==0)
+	{
+		S=S-c;
+	}
+ else
+	{
+		S=S+c;
+	}
+c=c+1;
+}
+printf("\n\n La serie suma de %d es :\n\n  ",S);
+system ("pause");
+}
