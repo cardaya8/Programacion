@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "conio.h"
+
+void main ()
+{
+	int N,  c, X, D;
+	float T , F, S;
+	system ("color 70");
+do
+{
+	printf("Ingrese La potencia : ");
+	scanf ("%d",&N);
+	
+}while (N<=0);
+	printf("\n\nIngrese La base como numero : ");
+	scanf ("%d",&X);
+S=0;
+c=1;
+D=1;
+F=1;
+printf("        c        D        S \n\n ");
+while(c<=N)
+{
+	
+	D = D * X;
+	F = F * c;
+	T = D/F;
+	S = S + T;
+	printf("%8d   %8d   %8d\n ",c,D,S);
+	c=c+1;
+}
+
+printf("\n\n La Serie suma de %f \n\n ", S);
+system ("pause");
+}
