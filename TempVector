@@ -1,0 +1,29 @@
+// TempVector.cpp : Defines the entry point for the console application.
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+void main ()
+{
+	int pos;
+	float Temp[24],Suma,Promedio;
+	printf("Ingrese 24 Temperaturas \n\n");
+
+ for (pos=0;pos<24;pos++)
+ {
+	 printf("\nTemp[%d]= ",pos+1);
+	 scanf("%f",&Temp[pos]);
+ }
+ Suma = 0;
+ for(pos=0;pos<24;pos++)
+ {
+  Suma = Suma+Temp[pos];
+ }
+ Promedio=Suma/24;
+ printf("\n\nEl promedio es %5.2f",Promedio);
+
+ printf("\n\n");
+ system ("pause");
+}
+
