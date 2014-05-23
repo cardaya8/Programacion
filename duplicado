@@ -1,0 +1,41 @@
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+#define n 10
+ 
+void main()
+{int pos, i, k, a[n]={'\0'},b[n]= {'\0'};
+ int band;
+ for (pos=0;pos<n;pos++)
+	 {printf("\n a[%d] = ",pos+1);
+     scanf("%d",&a[pos]);
+     } 
+printf("\n	valores de a[]\n");
+for (pos=0;pos<n;pos++)
+    {printf("%d ",a[pos]);
+    }
+printf("\n\n sin duplicados");
+i = 0;
+b[0]=a[0];
+for(pos=1;pos<n;pos++)
+   {band = 0;
+	   for (k=0;k<=i;k++)
+         {if (a[pos]==b[k])
+              {band=1;
+              }
+         }
+         if(band ==0)
+		   {i = i+1;
+			   b[i]=a[pos];
+		   }
+   } 
+for (pos=0;pos<=i;pos++)
+    {printf("%d ",b[pos]);
+    }
+
+    printf("\n\n");
+    system("pause");
+}
+
