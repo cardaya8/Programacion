@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+
+{
+	int NC,Op,TipoC,TipoI,TipoO;
+	cout<< "\t\t  SOFTWARE DE ASESORAMIENTO DE PLANES DE INTERNET ";
+	cout<< "\n\nIngrese el numero de computadoras: ";
+	cin>> NC;
+	cout<< "\n\nSeleccione ****** : \n 1.- Casa \n 2.- Cafe Internet \n 3.- Oficina/Empresa  \n ";
+	cin>> Op;
+	TipoC=0;
+
+	if(Op==1)
+		TipoC=NC;
+	else 
+		if(Op==2)
+		   TipoI=NC;
+	if (Op==3)
+		TipoO=NC;
+	
+	if (TipoC<=5)
+		cout<<"*COTAS.- 512KBPS X BS.173 \n*AXS.- 1024KBPS X BS.279 \n*ENTEL.- 512KBPS X BS.150";
+	if (TipoI<=5)
+		cout<<"*COTAS.- 512KBPS X BS.173 \n*AXS.- 1024KBPS X BS.279 \n*ENTEL.- 512KBPS X BS.150";
+	if (TipoO<=5)
+		cout<<"*COTAS.- 512KBPS X BS.173 \n*AXS.- 1024KBPS X BS.279 \n*ENTEL.- 512KBPS X BS.150";
+	if ((TipoI>5)&&(TipoI<=10))
+		cout<<"*COTAS.- 730KBPS X BS.245 \n*AXS.- 1024KBPS X BS.279 \n*ENTEL.- 768KBPS X BS.170";
+	getch();
+	}if ((NC>=5)&&(NC<=10)&&(Op==2))
+	cout<<"*COTAS.- 730KBPS X BS.245 \n*AXS.- 1024KBPS X BS.279 \n*ENTEL.- 768KBPS X BS.170";
+	if ((NC>=10)&&(NC<=20)&&(Op==2))
+	cout<<"*COTAS.- 1024KBPS X BS.315 \n*AXS.- 1024KBPS X BS.279 \n*ENTEL.- 1024KBPS X BS.230";
+	if ((NC>=20)&&(NC<=50)&&(Op==2))
+	cout<<"*COTAS.- 2450KBPS X BS.713 \n*AXS.- 2048KBPS X BS.749 \n*ENTEL.- 2048KBPS X BS.780";
