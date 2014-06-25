@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include "stdio.h"
+#include "conio.h"
+#include "stdlib.h"
+
+float leer();
+float porcentaje(float x,float total);
+
+
+void main()
+{float resA ,resB ,resC,a, b, c,t;
+ a=leer();
+ b=leer();
+ c=leer();
+ total=a+b+c;
+ resA=porcentaje(a,t);
+ resB=porcentaje(b,t);
+ resC=porcentaje(c,t);
+ printf("\n100 porciento = %g\n",t);
+ printf("Primer valor = %g porciento\n",resA);
+ printf("Segundo valor = %g porciento\n",resB);
+ printf("Tercer valor = %g porciento\n",resC);
+system("pause");
+}
+
+float leer()
+{ float num;
+	printf("Ingrese un valor = ");
+	scanf("%g",&num);
+	return(num);
+}
+
+float porcentaje(float x,float t)
+{ float porcentaje;
+	porcentaje = (x*100)/t;
+	return(porcentaje);
+}
