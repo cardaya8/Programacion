@@ -1,0 +1,55 @@
+#include "stdafx.h"
+#include "stdio.h"
+int factorial(int a)
+{
+	int f=1;
+	for(int i=1;i<=a;i++)
+	{
+		f=f*i;
+	}
+	return f;
+}
+
+int cubo(int n)
+{
+	int c;
+	c=n*n*n;
+	return c;
+}
+
+int main()
+{
+	int op,n,x;
+	printf("----------Menu-------------\n");
+	printf("1.-Factorial\n");
+	printf("2.- Cubo\n");
+	printf("3.- Salir\n");
+	printf("---------------------------\n");
+	printf("Elija una opcion\n");
+	scanf("%i",&op);
+
+	
+	
+	switch (op)
+	{
+		case 1: {
+			printf("Introduzca el valor d n ");
+			scanf("%i",&n);
+			x=factorial(n);
+			printf("El factorial es: %i \n",x);
+
+		}break;
+		
+		case 2:{
+			printf("Introduzca el valor d n ");
+			scanf("%i",&n);
+			x=cubo(n);
+			printf ("El cubo es: %i \n",x);
+		}break;
+		case 3:{
+			printf("Salir\n");
+			
+		}break;
+	}
+	return 0;
+}
