@@ -1,0 +1,30 @@
+#include "stdafx.h"
+
+
+int main()
+{
+	int v[50];
+	int n;
+	int x;
+	int s=0;
+
+	printf("Introduzca la cantidad de elementos del vector: ");
+	scanf("%i",&n);
+	for (int i=0;i<n;i++)
+	{
+		printf("Elemento: ");
+		scanf("%i",&x);
+		v[i]=x;
+	}
+	for (int i=0;i<n;i++)
+	{
+		s = s + v[i];
+	}
+	for (int i=0;i<n;i++)
+	{
+		printf("%i ",v[i]);
+	}
+	printf("\nLa suma de los elementos del vector es : %i \n",s);
+	return 0;
+}
+
